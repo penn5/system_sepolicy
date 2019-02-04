@@ -127,3 +127,6 @@ allow system_app system_server:udp_socket {
 
 # app domains which access /dev/fuse should not run as system_app
 neverallow system_app fuse_device:chr_file *;
+
+allow system_server adbtcp_prop:property_service set;
+
